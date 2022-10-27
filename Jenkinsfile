@@ -9,10 +9,10 @@ pipeline {
         booleanParam(name: 'SKIP_PUBLISH_IMAGE', defaultValue: false)
     }
     tools {
-        maven 'Maven_3.8.6'
+        maven 'Maven 3.8.6'
         git 'Default'
     }
-    
+
     stages {
         stage('Build') {
             steps {
